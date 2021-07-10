@@ -47,7 +47,10 @@ class MicrophoneMonitor: ObservableObject {
         
         // 5
         do {
+            
             audioRecorder = try AVAudioRecorder(url: url, settings: recorderSettings)
+            let r = audioRecorder.deleteRecording()
+            print(r)
             try audioSession.setCategory(.playAndRecord, mode: .default, options: [])
             
             startMonitoring()
@@ -64,6 +67,9 @@ class MicrophoneMonitor: ObservableObject {
             // 7
             self.audioRecorder.updateMeters()
             self.soundSamples[self.currentSample] = self.audioRecorder.averagePower(forChannel: 0)
+            if self.audioRecorder.averagePower(forChannel: 0) > -15 {
+                print("TODO: push notification")
+            }
             self.currentSample = (self.currentSample + 1) % self.numberOfSamples
         })
     }

@@ -14,6 +14,9 @@
 		8F5B092D23D958AA0023BEFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5B092C23D958AA0023BEFC /* Preview Assets.xcassets */; };
 		8F5B093023D958AA0023BEFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5B092E23D958AA0023BEFC /* LaunchScreen.storyboard */; };
 		8F5B093823D958B70023BEFC /* Microphone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5B093723D958B70023BEFC /* Microphone.swift */; };
+		A26B1B622699794D00CF66A4 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26B1B612699794D00CF66A4 /* AudioPlayer.swift */; };
+		A26B1B6526997A2400CF66A4 /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A26B1B6426997A2400CF66A4 /* sample.mp3 */; };
+		A26B1B6926997E3400CF66A4 /* sample1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A26B1B6826997E3400CF66A4 /* sample1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		8F5B092F23D958AA0023BEFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F5B093123D958AA0023BEFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F5B093723D958B70023BEFC /* Microphone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Microphone.swift; sourceTree = "<group>"; };
+		A26B1B612699794D00CF66A4 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		A26B1B6426997A2400CF66A4 /* sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample.mp3; sourceTree = "<group>"; };
+		A26B1B6826997E3400CF66A4 /* sample1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		8F5B092223D958A80023BEFC /* SoundVisualizer */ = {
 			isa = PBXGroup;
 			children = (
+				A26B1B6426997A2400CF66A4 /* sample.mp3 */,
+				A26B1B6826997E3400CF66A4 /* sample1.mp3 */,
 				8F5B092323D958A80023BEFC /* AppDelegate.swift */,
 				8F5B092523D958A80023BEFC /* SceneDelegate.swift */,
 				8F5B092723D958A80023BEFC /* ContentView.swift */,
@@ -66,6 +74,7 @@
 				8F5B092E23D958AA0023BEFC /* LaunchScreen.storyboard */,
 				8F5B093123D958AA0023BEFC /* Info.plist */,
 				8F5B092B23D958AA0023BEFC /* Preview Content */,
+				A26B1B612699794D00CF66A4 /* AudioPlayer.swift */,
 			);
 			path = SoundVisualizer;
 			sourceTree = "<group>";
@@ -139,6 +148,8 @@
 				8F5B093023D958AA0023BEFC /* LaunchScreen.storyboard in Resources */,
 				8F5B092D23D958AA0023BEFC /* Preview Assets.xcassets in Resources */,
 				8F5B092A23D958AA0023BEFC /* Assets.xcassets in Resources */,
+				A26B1B6926997E3400CF66A4 /* sample1.mp3 in Resources */,
+				A26B1B6526997A2400CF66A4 /* sample.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +162,7 @@
 			files = (
 				8F5B092423D958A80023BEFC /* AppDelegate.swift in Sources */,
 				8F5B092623D958A80023BEFC /* SceneDelegate.swift in Sources */,
+				A26B1B622699794D00CF66A4 /* AudioPlayer.swift in Sources */,
 				8F5B092823D958A80023BEFC /* ContentView.swift in Sources */,
 				8F5B093823D958B70023BEFC /* Microphone.swift in Sources */,
 			);

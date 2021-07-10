@@ -12,6 +12,8 @@ let numberOfSamples: Int = 10
 
 struct ContentView: View {
     @ObservedObject private var mic = MicrophoneMonitor(numberOfSamples: numberOfSamples)
+    @ObservedObject private var player1 = AudioPlayer(name: "sample1")
+    @ObservedObject private var player = AudioPlayer(name: "sample")
     
     private func normalizeSoundLevel(level: Float) -> CGFloat {
         let level = max(0.2, CGFloat(level) + 50) / 2 // between 0.1 and 25
